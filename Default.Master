@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="FileUploading.Default" %>
+<%@ Register TagName="myheader" Src="~/header.ascx" TagPrefix="aa" %>
+<%@ Register Src="~/footer.ascx"  TagName="myfooter" TagPrefix="aa"%>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+           <table>
+                <tr>
+                    <td>
+                        <aa:myheader runat="server" id="head2"></aa:myheader>
+                    </td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+                    </td>
+                </tr>
+
+                  <tr>
+                    <td>
+                        <aa:myfooter runat="server" id="footer1" ></aa:myfooter>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
